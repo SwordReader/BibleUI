@@ -12,7 +12,8 @@ release and never imports SwordKit directly.
 - `BibleContentMetadataView`: content identity and required attribution.
 - `BibleCatalogView`: installed/available sections, search, and language filtering.
 - `BibleReaderText`: sanitized rich text inheriting the host's font and appearance.
-- `BibleReferenceControl`: independent anchored book and chapter controls.
+- `BibleReferenceControl`: independent anchored book/chapter controls on Mac,
+  iPhone/iPad, and Vision; native navigation links on Watch and TV.
 - `BibleEntryReader`: ordered provider entries, previous/next navigation,
   attribution, cancellation, and stale-load protection.
 
@@ -21,6 +22,8 @@ and storage. Catalog selection does not implicitly download content. The rich
 text formatter removes active markup, external resources, and links rather
 than allowing untrusted content to load or navigate. The advanced Scripture
 study renderer and selected-passage actions remain separate roadmap work.
+Watch and TV intentionally omit unsupported text-selection interactions;
+Watch reading blocks use compact margins.
 
 Add the `BibleUI` product and `import BibleUI` in the host SwiftUI app. Use
 `BibleReaderText(content:)` with content from

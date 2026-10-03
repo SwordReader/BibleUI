@@ -7,7 +7,7 @@ import SwiftUI
 /// BibleUI depends on a tagged BibleKit release for its content contracts.
 public enum BibleUI {
     /// The package's public version marker for diagnostic displays.
-    public static let version = "0.2.2"
+    public static let version = "0.2.3"
 }
 
 /// A compact, accessible summary of provider-owned content metadata.

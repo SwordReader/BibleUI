@@ -15,6 +15,15 @@ public struct BibleReferenceControl<Books: View, Chapters: View>: View {
     }
     public var body: some View {
         HStack(spacing: 8) {
+            #if os(watchOS) || os(tvOS)
+            NavigationLink { books() } label: { Text(bookTitle) }
+                .accessibilityHint("Choose a Bible book")
+            NavigationLink { chapters() } label: {
+                Text(chapter.map(String.init) ?? "Chapter").monospacedDigit()
+            }
+            .disabled(chapter == nil)
+            .accessibilityLabel("Choose Chapter")
+            #else
             Button(bookTitle) { showingBooks = true }
                 .popover(isPresented: $showingBooks) { books() }
                 .accessibilityHint("Choose a Bible book")
@@ -29,6 +38,7 @@ public struct BibleReferenceControl<Books: View, Chapters: View>: View {
             .disabled(chapter == nil)
             .popover(isPresented: $showingChapters) { chapters() }
             .accessibilityLabel("Choose Chapter")
+            #endif
         }
         .fontWeight(.semibold)
         .buttonStyle(.plain)

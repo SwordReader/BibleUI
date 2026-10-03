@@ -45,9 +45,16 @@ public struct BibleReaderText: View {
     public init(content: AttributedString) { self.content = content }
     public var body: some View {
         Text(content)
+            #if !os(watchOS) && !os(tvOS)
             .textSelection(.enabled)
+            #endif
             .frame(maxWidth: 720, alignment: .leading)
+            #if os(watchOS)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 8)
+            #else
             .padding(.horizontal, 24)
             .padding(.vertical, 20)
+            #endif
     }
 }
