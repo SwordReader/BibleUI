@@ -3,9 +3,9 @@
 BibleUI is a SwiftUI component library for presenting BibleKit content with
 native Apple conventions. It intentionally does not know about SWORD directly.
 
-Reviewed October 3, 2026; the package allows
-compatible BibleKit `0.3.x` releases starting at `0.3.2`; app integration is
-underway separately.
+Reviewed October 3, 2026 through `52b495f`. BibleUI 0.2.3 allows compatible
+BibleKit `0.3.x` releases starting at `0.3.2`. SwordReader's baseline adoption
+is merged in PR #16; continued extraction and device acceptance remain pending.
 
 ## Principles
 
