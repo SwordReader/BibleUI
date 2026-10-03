@@ -1,13 +1,22 @@
 {
-  "originHash" : "0e5f7d3339cbd251265effbaa2822e375eba644bd5b7e603b130083d2e9294af",
+  "originHash" : "f096ebe966d902983e1f127b218bd47043c913438164a0554f893cd494709fe7",
   "pins" : [
     {
       "identity" : "biblekit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/orbeavers14/BibleKit.git",
+      "location" : "https://github.com/SwordReader/BibleKit.git",
       "state" : {
-        "revision" : "5e5b8bcee5993a44799a93bb018d0bf001592bf7",
-        "version" : "0.1.0"
+        "revision" : "1c35680de5a7affb599a8cc0abce338c76b2d30c",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "swordkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orbeavers14/SwordKit.git",
+      "state" : {
+        "revision" : "998ce4ae81def645a7c2d53053efc8866dc95daa",
+        "version" : "0.6.1"
       }
     }
   ],
