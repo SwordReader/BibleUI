@@ -3,6 +3,10 @@
 BibleUI is a SwiftUI component library for presenting BibleKit content with
 native Apple conventions. It intentionally does not know about SWORD directly.
 
+Reviewed October 3, 2026 through `286706b` (tag `0.2.2`). The package allows
+compatible BibleKit `0.3.x` releases starting at `0.3.2`; app integration is
+underway separately.
+
 ## Principles
 
 - Use native navigation, sheets, popovers, menus, context menus, Dynamic Type,
@@ -14,21 +18,28 @@ native Apple conventions. It intentionally does not know about SWORD directly.
 ## Ordered milestones
 
 1. BibleKit integration baseline
-   - Depend on the first tagged BibleKit release.
-   - Provide catalog, license-attribution, and availability presentation models.
+   - [x] Depend on a tagged BibleKit release.
+   - [x] Content metadata and required-license-attribution presentation.
+   - [ ] General provider availability/action presentation beyond catalog metadata.
 
 2. Reader primitives
-   - Rich text, configurable typography, text selection, accessibility, and
-     adaptive Scripture/keyed-content reader components.
+   - [x] Sanitized rich-text formatting and selectable native reading blocks
+     inheriting host typography.
+   - [x] Anchored book/chapter reference controls.
+   - [x] Provider-independent ordered-entry reader with cancellation/stale-load guards.
+   - [ ] Full Scripture/keyed reader acceptance across compact layouts, Dynamic
+     Type, keyboard/VoiceOver, internal links, and rich study metadata.
 
 3. Library and module management
-   - Installed-content and discovery sections, language filtering, downloads,
-     removals, progress, errors, and attribution.
+   - [x] Installed/available catalog sections, language filtering, search, and attribution.
+   - [ ] Provider-capability-driven download/removal actions, progress, errors,
+     persistent filtering, and live installation state.
 
 4. Study interactions
-   - Native selected-passage context actions for bookmarking, highlighting, and
+   - [ ] Native selected-passage context actions for bookmarking, highlighting, and
      notes without cluttering every verse.
 
 5. SwordReader extraction
-   - Move reusable, tested reader and library components from SwordReader while
-     retaining product-specific navigation and application state in the app.
+   - [x] Establish reusable reader, catalog, reference, and entry components.
+   - [ ] Merge and validate SwordReader adoption from the separate integration
+     worktree, retaining product navigation, app state, and existing study behavior.
