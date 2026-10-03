@@ -48,3 +48,13 @@ underway separately.
      app state, and the advanced study renderer remain app-owned.
    - [ ] Complete running-app/device acceptance of the adopted components and
      further extraction without losing selection, links, or study behavior.
+
+6. Read Aloud presentation
+   - [ ] Add reusable native playback controls driven by host-supplied state and
+     actions: play/pause/resume/stop, rate, available voices, and entry navigation.
+   - [ ] Present optional spoken-passage highlighting with accessible labels,
+     keyboard actions, Dynamic Type, and compact-layout/device acceptance.
+   - [ ] Use platform-appropriate controls; validate Watch presentation separately
+     and retain TV/Vision app adoption as later work.
+   - [ ] Keep speech synthesis, audio sessions, listening-position persistence,
+     Siri/App Intents, and product navigation in the host app.
