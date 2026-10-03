@@ -3,7 +3,7 @@ import Testing
 import BibleKit
 
 @Test func example() async throws {
-    #expect(BibleUI.version == "0.2.1")
+    #expect(BibleUI.version == "0.2.2")
 }
 
 @MainActor

@@ -20,7 +20,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/SwordReader/BibleKit.git", exact: "0.3.0"),
+        .package(url: "https://github.com/SwordReader/BibleKit.git", .upToNextMinor(from: "0.3.2")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

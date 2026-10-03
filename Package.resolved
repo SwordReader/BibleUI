@@ -1,13 +1,13 @@
 {
-  "originHash" : "f096ebe966d902983e1f127b218bd47043c913438164a0554f893cd494709fe7",
+  "originHash" : "625bef986c2f36405f6cfc282a2df95fa59d5203b7a76533c70d4ec8e0532a24",
   "pins" : [
     {
       "identity" : "biblekit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SwordReader/BibleKit.git",
       "state" : {
-        "revision" : "1c35680de5a7affb599a8cc0abce338c76b2d30c",
-        "version" : "0.3.0"
+        "revision" : "8b2fc992bb9507e7a780c04ddd8c12ea81a1ae35",
+        "version" : "0.3.2"
       }
     },
     {
